@@ -81,21 +81,21 @@ h2 {
   flex-wrap: wrap;
   font-size: 1.2rem;
 
-  span {
-    margin: 0.25em 0.25em;
-    border: 1px solid #e36bae;
-    border-radius: 10px;
-    padding: 0.25em 0.75em;
+}
+.filter-span {
+  margin: 0.25em 0.25em;
+  border: 1px solid #e36bae;
+  border-radius: 10px;
+  padding: 0.25em 0.75em;
+}
 
-    &:hover {
-      cursor: pointer;
-      background: linear-gradient(to bottom right, #e36bae, #fb743e);
-    }
-  }
-
-  .selected {
+.filter-span:hover {
+    cursor: pointer;
     background: linear-gradient(to bottom right, #e36bae, #fb743e);
-  }
+}
+
+.filter-selected {
+  background: linear-gradient(to bottom right, #e36bae, #fb743e);
 }
 
 .stations {
@@ -113,10 +113,11 @@ h2 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
 
-  &:hover {
+.station:hover{
     border-color: #e36bae;
-  }
+  
 }
 
 .stationName {

@@ -57,7 +57,7 @@ export default function Radio() {
       <div className="filters">
         {filters.map((filter) => (
           <span
-            className={stationFilter === filter ? "selected" : ""}
+            className={stationFilter === filter ? "filter-selected filter-span" : "filter-span"}
             onClick={() => setStationFilter(filter)}
           >
             {filter}
